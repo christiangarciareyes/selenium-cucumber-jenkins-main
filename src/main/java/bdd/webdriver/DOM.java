@@ -14,12 +14,15 @@ import java.io.IOException;
 
 public class DOM {
 
-    static String screenshotDir = "C:\\Users\\cgarcia\\Documents\\Producción TI\\DevOps\\Selenium\\Java\\selenium-cucumber-jenkins-main\\src\\test\\resources\\evidencias\\";
+    // static String screenshotDir = "C:\\Users\\cgarcia\\Documents\\Producción TI\\DevOps\\Selenium\\Java\\selenium-cucumber-jenkins-main\\src\\test\\resources\\evidencias\\";
+    static String screenshotDir = "C:\\Users\\Usuario\\Documents\\Testing\\Evidencias\\";
+    
     private static WebDriver driver;
 
     public static WebDriver webDriver() {
         if (driver == null) {
-            String chromeDriverPath = "C:\\Users\\cgarcia\\Documents\\Producción TI\\DevOps\\Selenium\\Java\\selenium-cucumber-jenkins-main\\src\\test\\resources\\webdriver\\chromedriver.exe";
+            // String chromeDriverPath = "C:\\Users\\cgarcia\\Documents\\Producción TI\\DevOps\\Selenium\\Java\\selenium-cucumber-jenkins-main\\src\\test\\resources\\webdriver\\chromedriver.exe";
+            String chromeDriverPath = "C:\\Users\\Usuario\\Documents\\Testing\\chromedriver.exe";
             System.setProperty("webdriver.chrome.driver", chromeDriverPath);
             driver = new ChromeDriver();
         }
